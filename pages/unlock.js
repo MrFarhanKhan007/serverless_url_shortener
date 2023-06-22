@@ -62,7 +62,7 @@ export default function Unlock() {
 
             {/* Headings */}
             <i className="w-full text-center fa fa-lock text-7xl" />
-            <h1 className="text-center text-3xl font-bold mt-3">F Url Shortener</h1>
+            <h1 className="text-center text-3xl font-bold mt-3">F - Url Shortener</h1>
             <h2 className="text-center text-lg font-medium text-gray-900 dark:text-gray-200">
               This page is secured. Please enter the password to continue.
             </h2>
