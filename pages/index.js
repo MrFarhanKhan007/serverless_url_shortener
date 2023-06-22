@@ -120,18 +120,18 @@ export default function Home() {
           <div className="mx-auto max-w-2xl transform rounded-xl bg-white dark:bg-gray-900 p-2 shadow-2xl ring-1 ring-black ring-opacity-5 transition-all">
 
             <div className="flex items-center justify-center gap-4 my-8">
-              <a href="https://github.com/1998code/shorten-url" target="_blank" className="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-500">
+              <a href="https://github.com/MrFarhanKhan007/serverless_url_shortener" target="_blank" className="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-500">
                 <i className="fab fa-github fa-x"></i>
               </a>
-              <a href="https://twitter.com/1998design" target="_blank" className="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-500">
+              <a href="https://twitter.com/Toxiclucien" target="_blank" className="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-500">
                 <i className="fab fa-twitter fa-x"></i>
               </a>
             </div>
 
             {/* Headings */}
-            <h1 className="text-center text-3xl font-bold mt-3">Magic Teleport</h1>
+            <h1 className="text-center text-3xl font-bold mt-3">F - URL Shortener</h1>
             <h2 className="text-center text-xl font-medium text-gray-900 dark:text-gray-200">
-              An URL Shortener Solution.
+              Your Best Serverless URL Shortener
             </h2>
 
             {/* Form */}
