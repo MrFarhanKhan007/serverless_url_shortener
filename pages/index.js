@@ -22,34 +22,7 @@ export default function Home() {
     const ref = formData.get('ref')
 
     // GET /api/v2/domain?add={domain}
-    if (domain !== "") {
-      await fetch(`/api/v2/domain?add=${domain}`)
-      .then(res => {
-        if (res.status === 403) {
-          alert('You are not authorized to add this domain.')
-        } else if (res.status === 409) {
-          alert('This domain/subdomain is already taken. Please remove it from your Vercel account and try again.')
-        } else if (res.status === 200) {
-          // check domain ip CNAME to cname.vercel-dns.com
-          fetch(`https://dns.google/resolve?name=${domain}&type=CNAME`)
-          .then(res => res.json())
-          .then(data => {
-            if ( (data.Answer && data.Answer[0].data === 'cname.vercel-dns.com.') || (data.Authority && data.Authority[0].name === 'vercel.app.') ) {
-            }
-            else {
-              alert('Domain/Subdomain added successfully. Please use CNAME and point to cname.vercel-dns.com.')
-            }
-          })
-        } else {
-          alert('Something went wrong, please try again later.')
-        }
-      })
-      .catch(err => {
-        console.error(err)
-        alert('Something went wrong, please try again later.')
-      })
-    }
-
+   
     // POST to /api/shorten
     await fetch('/api/v2/shorten', {
       method: 'POST',
